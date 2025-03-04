@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo 'Installing dependencies...'
                 sh 'npm install'
+                sh 'npm init -y'
             }
         }
         stage('Deploy') {
